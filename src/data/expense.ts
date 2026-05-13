@@ -1,0 +1,58 @@
+export const expenses = [
+  {
+    id: "1",
+    amount: 250,
+    category: "Food",
+    description: "Lunch from restaurant",
+    date: "2026-05-13",
+  },
+  {
+    id: "2",
+    amount: 80,
+    category: "Transport",
+    description: "Bus to Thrissur",
+    date: "2026-05-12",
+  },
+  {
+    id: "3",
+    amount: 1200,
+    category: "Shopping",
+    description: "Bought new sandals",
+    date: "2026-05-11",
+  },
+  {
+    id: "4",
+    amount: 45,
+    category: "Food",
+    description: "Evening tea and snacks",
+    date: "2026-05-10",
+  },
+  {
+    id: "5",
+    amount: 999,
+    category: "Bills",
+    description: "Internet recharge",
+    date: "2026-05-09",
+  },
+  {
+    id: "6",
+    amount: 300,
+    category: "Health",
+    description: "Medicines",
+    date: "2026-05-08",
+  },
+  {
+    id: "7",
+    amount: 150,
+    category: "Entertainment",
+    description: "Movie ticket",
+    date: "2026-05-07",
+  },
+  {
+    id: "8",
+    amount: 500,
+    category: "Travel",
+    description: "Train ticket",
+    date: "2026-05-06",
+  },
+];
