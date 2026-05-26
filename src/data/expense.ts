@@ -10,7 +10,7 @@ export const expenses = [
     id: "2",
     amount: 80,
     category: "Transport",
-    description: "Bus to Thrissur",
+    description: "Bus to Kochi",
     date: "2026-05-12",
   },
   {
