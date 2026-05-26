@@ -1,9 +1,9 @@
 import { Text, View, StyleSheet } from "react-native";
 
-export default function Chart() {
+export default function Report() {
   return (
     <View style={styles.container}>
-      <Text>Money Minder - Chart  - Coming Soon</Text>
+      <Text>Money Minder - Report  - Coming Soon</Text>
     </View>
   );
 }

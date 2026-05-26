@@ -1,29 +1,32 @@
-import { expenses } from "@/data/expense";
-import { Text, View, StyleSheet, ScrollView } from "react-native";
-import TransactionCard from "../components/TransactionCard";
+import { StyleSheet, Text, View } from "react-native";
+type ExpenseProp = {
+  expense: {
+    id: string;
+    category: string;
+    description: string;
+    amount: number;
+    date: string;
+  };
+};
 
-export default function Transactions() {
+const TransactionCard = ({ expense }: ExpenseProp) => {
   return (
-    <ScrollView
-      style={styles.container}
-      contentContainerStyle={styles.contentContainer}
-    >
-      {expenses.map((expense, i) => (
-        <TransactionCard key={i} expense={expense} />
-      ))}
-    </ScrollView>
+    <View key={expense.id} style={styles.expenseItem}>
+      <View style={styles.topRow}>
+        <View>
+          <Text style={styles.category}>{expense.category}</Text>
+          <Text style={styles.description}>{expense.description}</Text>
+        </View>
+        <View style={styles.rightSection}>
+          <Text style={styles.amount}>₹{expense.amount}</Text>
+          <Text style={styles.date}>{expense.date}</Text>
+        </View>
+      </View>
+    </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  contentContainer: {
-    paddingTop: 30,
-    paddingHorizontal: 20,
-    paddingBottom: 40,
-  },
   expenseItem: {
     backgroundColor: "#FFFFFF",
     padding: 16,
@@ -74,3 +77,5 @@ const styles = StyleSheet.create({
     color: "#94A3B8",
   },
 });
+
+export default TransactionCard;
